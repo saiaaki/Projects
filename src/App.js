@@ -1,5 +1,7 @@
 import './App.css';
-import Axios from './Components/Axios';
+import Database from './Components/Database';
+// import Axios from './Components/Axios';
+// import Stopwatch from './Components/Stopwatch';
 // import Calculator2 from './Components/Calculator2';
 // import Fetch from './Components/Fetch';
 // import Filter from './Components/Filter';
@@ -20,7 +22,9 @@ function App() {
       {/* <SigninForm/> */}
       {/* <Calculator2/> */}
     {/* <Fetch/> */}
-    <Axios/>
+    {/* <Axios/> */}
+    {/* <Stopwatch/> */}
+    <Database/>
     </div>
   );
 }
