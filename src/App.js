@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
  
 // import Nameclick from './Components/Nameclick';
 import Axios from './Components/Axios';
+// import SearchFilter from './Components/SearchFilter';
 
   
 const App = () => {
@@ -13,9 +14,10 @@ const App = () => {
     <Body/> */}
     {/* <Download/> */}
     {/* <SearchFilter/> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
+
+    </BrowserRouter> */}
     <Axios/>
-    </BrowserRouter>
     {/* <Nameclick/> */}
     </div>
   );

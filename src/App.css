@@ -1,3 +1,5 @@
+ 
+ 
  .header{
    margin:2px;
   display: flex;
@@ -90,12 +92,48 @@
     grid-template-columns: repeat(5, 1fr);
    }
    .mainDiv{
-    padding: 23px;
+       /* padding: 23px; */
+       border: 1px solid #dee1e6;
+       /* width: 190px; */
+       text-align: center;
+       background-color: #f8f9fc;
+       position: relative;
+       width: 95%;
+       min-height: 300px;
+  }
+  .mainDiv:hover{
+   
+   cursor: pointer;
     border: 1px solid black;
-    width : 150px;
-    text-align: center;
   }
   .filter-btn button{
    margin:2px;
    padding: 5px;
   } 
+  
+  .btn-click{
+   color: #fff;
+   background-color: #0d6efd;
+   border-color: #0d6efd;
+   /* position: absolute; */
+   /* text-align: center; */
+   /* display: block; */
+   /* width: 40%; */
+   /* bottom: 10px; */
+   text-align: center;
+  }
+  .store-name{
+   font-family: 'Playfair Display', serif;
+   color: rgb(34, 17, 4);
+  }
+  .btn-div{
+   position: absolute;
+    bottom: 10px;
+    width: 100%;
+    
+}
+
+.search-bar{
+   width: 400px;
+   height: 35px;
+}

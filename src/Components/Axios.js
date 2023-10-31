@@ -1,45 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
 import axios from 'axios';
-import Header from '../Firstapp/Header';
 const Axios = () => {
   const [data, setData] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);  
+  const [searchInput, setSearchInput] = useState(''); 
 
   useEffect(() => {
     axios.get("https://dummyjson.com/products")
       .then(res => {
         console.log(res?.data.products, "json");
         setData(res?.data.products);
-        setFilteredData(res?.data.products);  
-      })
+       })
   }, []);
-
-  const HighCostItems = () => {
-    const filteredItems = data.filter(item => item.price > 550);
-    setFilteredData(filteredItems);
-  };
-  const LowCostItems = () => {
-    const filteredItems1 = data.filter(item => item.price < 550);
-    setFilteredData(filteredItems1);
-  };
-
   return (
     <div>
-      <Header/>
-      <div className='filter-btn'>
-        <button onClick={HighCostItems}> High cost Items</button>
-        <button onClick={LowCostItems}>Low cost Items</button>
+      <div>
+        <center>
+          <h1 className='store-name'>STORE</h1>
+        </center>
+        <hr/>
       </div>
       <div>
+        <center>
+        <input type='text' placeholder='search' className='search-bar' value={searchInput} onChange={(e)=>setSearchInput(e.target.value)}/>
+        </center>
+        
         <ul>
           <h4>
-            {filteredData.map(item => (
+            {data.filter(item=>item.title.toLowerCase().includes(searchInput.toLowerCase())).map(item => (
               <p className='mainDiv' key={item.id}>
                 <img src={item.images[0]} alt={item.name} className='image' /><br />
                 {item.title} <br />
-                {item.price}<br /> {item.brand} <br /><br />
-                <button onClick={() => { alert("first check your wallet 😀") }}>Buy Now</button>
+                ${item.price}<br /> {item.brand} <br /><br />
+                <div className='btn-div'><button className='btn-click'>Buy Now</button></div>
               </p>
             ))}
           </h4>
