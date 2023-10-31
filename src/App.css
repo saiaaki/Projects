@@ -1,55 +1,101 @@
-/*  
-.main{
- align-items: center; 
- background-color: #1e293b;
- border: 1px solid black;
- border-radius: 5px;
- width: 224px;
- height: 163px;
- text-align: center;
- padding: 22px;
-} 
-.main h2{
-  color: #f0bb03;
-}
-.main p{
-  color: #ffff;
-}
-
-.maindiv{
+ .header{
+   margin:2px;
   display: flex;
-  justify-content: center;
-  margin-top: 175px;
-}
-
-.sub{
-  display: flex;
-  justify-content: right;
-  background-color: blue;
-  padding: 15px;
-}
-.sub a{
-  border-radius: 2px;
-  margin-right: 28px;
-  color: white;
-} */
-
-/* button{
-  padding: 5px;
-  margin: 4px;
-} */
-
-.image{
-  width: 150px;
-  height: 150px;
-}
- h4{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
- }
- .mainDiv{
-  padding: 23px;
+  justify-content: space-between;
   border: 1px solid black;
-  width : 150px;
-  text-align: center;
-}
+  }
+ .logo{
+  width: 100px;
+  height: 100px;
+ }
+ .nav-items{
+  padding: opx 20px;
+ }
+ .nav-items>ul{
+  font-size: 18px;
+  font-style: oblique;
+  padding: 1px 20px;
+  display: flex;
+  list-style-type: none;
+ }
+ .nav-items>ul>li{
+  padding: 10px;
+  margin: 10px;
+ }
+ /* .res-card{
+    padding: 4px;
+    width: 176px;
+    height: 350px;
+    background-color: #f0f0f0;
+ }
+ .res-card:hover{
+    cursor: pointer;
+    border: 1px solid black;
+ }
+ .cake-img{
+  width:175px;
+  height:175px;
+ }
+ .res-container{
+  display: flex;
+  flex-wrap: wrap;
+ } */
+
+ /* .main{
+   align-items: center; 
+   background-color: #1e293b;
+   border: 1px solid black;
+   border-radius: 5px;
+   width: 224px;
+   height: 163px;
+   text-align: center;
+   padding: 22px;
+  }  */
+  /* .main h2{
+    color: #f0bb03;
+  }
+  .main p{
+    color: #ffff;
+  } */
+  
+  .maindiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 175px;
+  }
+  
+  .sub{
+    display: flex;
+    justify-content: right;
+    background-color: blue;
+    padding: 15px;
+  }
+  .sub a{
+    border-radius: 2px;
+    margin-right: 28px;
+    color: white;
+  } */
+  
+  button{
+    padding: 5px;
+    margin: 4px;
+  }
+  
+  .image{
+    width: 150px;
+    height: 150px;
+  }
+   h4{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+   }
+   .mainDiv{
+    padding: 23px;
+    border: 1px solid black;
+    width : 150px;
+    text-align: center;
+  }
+  .filter-btn button{
+   margin:2px;
+   padding: 5px;
+  } 
